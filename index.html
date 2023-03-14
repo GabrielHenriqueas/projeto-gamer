@@ -42,13 +42,13 @@
     <div class="header-bottom">
         <div class="layout-grid alinhamento-between-center">
             <!-- Menu Hamburger. Visível apenas no smartphone -->
-            <img src="assets/icons/icone_hamburger.svg"
+            <img onclick="mostrarMenu()" src="assets/icons/icone_hamburger.svg"
                 alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
 
             <img class="logo" src="assets/images/logotipo-gamer.svg"
                 alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
 
-            <nav class="menu">
+            <nav class="menu" id="menu">
                 <a href="inicio">Inicio</a>
                 <a href="jogadores">Jogadores</a>
                 <a href="equipes">Equipes</a>
@@ -80,9 +80,9 @@
             </nav>
 
             <!-- menu 3 pontinhos -->
-            <img src="assets/icons/icone_pointer.svg" alt="Ícone 3 pontinhos, abre e fecha o menu de úsuarios">
+            <img onclick="mostrarMenu2()" src="assets/icons/icone_pointer.svg" alt="Ícone 3 pontinhos, abre e fecha o menu de úsuarios">
 
-            <div class="menu-usuarios">
+            <div class="menu-usuarios" id="menu-usuarios">
                 <a href="">
                     <img src="assets/icons/icone_pessoa.svg" alt="Ícone de perfil">
                 </a>
@@ -104,10 +104,23 @@
 
     <main>
         <article class="banner-inicio">
-            
+            <h1>Liga Gamers </h1>
+
+            <h2></h2>
+
         </article>
 
     </main>
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu")
+        }
+
+        function mostrarMenu2() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-menu2")
+        }
+    </script>
 
 </body>
 
