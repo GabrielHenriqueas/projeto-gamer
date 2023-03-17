@@ -56,6 +56,7 @@ body {
 /* HEADER */
 header {
     position: fixed;
+    top: 0;
     width: 100vw;
     height: 60px;
     z-index: 100;
@@ -156,9 +157,8 @@ header .header-bottom nav .midias-sociais {
 }
 
 main {
-    position: absolute;
     width: 100%;
-    top: 60px;
+    margin-top: 60px;
 }
 
 main .banner-inicio {
@@ -177,9 +177,9 @@ main .banner-inicio {
 }
 
 main .banner-inicio h1 {
-    font-family: TitilliumWeb;
+    font-family: TitilliumWeb-Black;
     font-size: 40px;
-    text-shadow: 0 0 7px #fd4255;
+    text-shadow: 0 0 7px #FD4255;
     margin-top: 25px;
 }
 
@@ -213,11 +213,11 @@ main .jogos-flex {
     justify-content: space-evenly;
 }
 
-    /* Tablets >= 768px */
-    @media screen and (min-width: 768px) {}
+/* Tablets >= 768px */
+@media screen and (min-width: 768px) {}
 
-    /* Desktop >= 1200px*/
-    @media screen and (min-width: 1200px) {
+/* Desktop >= 1200px*/
+@media screen and (min-width: 1200px) {
     .layout-grid {
         width: 100%;
         max-width: 1200px;
@@ -225,31 +225,43 @@ main .jogos-flex {
 
     /* header */
     header {
+        position: static;
         height: 140px;
+        width: 100%;
+    }
+
+    header .header-bottom {
+        height: 90px;
     }
 
     header .header-top {
         display: block;
+        height: 50px;
         border-bottom: 2px solid #f9aa01;
         color: white;
     }
-    
+
     header .header-top .contatos {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 450px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400px;
 
     }
 
     /* divs .phone, .mail */
-    header .header-top .contatos > div {
+    header .header-top .contatos>div {
         display: flex;
         gap: 10px;
         width: 200px;
     }
-    
-    header .header-top .mdias-sociais {
+
+    header .header-top .midias-sociais {
+        display: flex;
+        justify-content: space-between;
         width: 140px;
     }
 
@@ -281,16 +293,58 @@ main .jogos-flex {
         position: static;
         width: 140px;
         flex-direction: row;
+        justify-content: space-between;
         height: auto;
         background-color: transparent;
         background-image: none;
     }
 
-    header .header-bottom nav > a {
+    header .header-bottom nav>a {
         padding: 0;
         border-bottom: none;
     }
+
+    main {
+        margin-top: 0;
+    }
+
+    main .banner-inicio {
+        height: 722px;
+        background-image: url(../assets/images/Banner_background_1.png);
+    }
+    
+    main .jogos .jogos-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+    }
+
+    main .jogos img {
+        width: 500px;
+        height: 313px;
+    }
+
+    main .banner-inicio h1 {
+        font-size: 80px;
+
+    }
+
+    main .banner-inicio a {
+        width: 203px;
+    }
+
+    main section.time-gamer {
+        height: 1000px;
+    }
+
+    main .time-gamer .time-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
+
 
 main section.time-gamer {
     width: 100%;
@@ -311,9 +365,11 @@ main .info-flex {
     flex-direction: column;
     align-items: center;
 }
+
 main .info-gamer {
     height: 60px;
 }
+
 main section.time-gamer .line {
     width: 205px;
     border-top: 2px solid black
