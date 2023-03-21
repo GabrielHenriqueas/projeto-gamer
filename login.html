@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Formulario de login</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
     <!-- Header -->
 
@@ -18,7 +20,7 @@
                         <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
                         <p>(11)0900-1010</p>
                     </div>
-    
+
                     <div class="mail">
                         <img src="assets/icons/icone_email.svg" alt="email">
                         <p>contato@gamer.com.br</p>
@@ -28,75 +30,75 @@
                     <a href="">
                         <img src="assets/icons/icone_facebook.svg" alt="Facebook logo">
                     </a>
-    
+
                     <a href="">
                         <img src="assets/icons/icone_linkedin.svg" alt="Linkedin logo">
                     </a>
-    
+
                     <a href="">
                         <img src="assets/icons/icone_instagram.svg" alt="Instagram logo">
                     </a>
                 </div>
             </div>
         </div>
-    
+
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!-- Menu Hamburger. Visível apenas no smartphone -->
                 <img class="menu-hamburger" onclick="mostrarMenu()" src="assets/icons/icone_hamburger.svg"
                     alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
-    
+
                 <img class="logo" src="assets/images/logotipo-gamer.svg"
                     alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
-    
+
                 <nav class="menu" id="menu">
                     <a href="inicio">Inicio</a>
                     <a href="jogadores">Jogadores</a>
                     <a href="equipes">Equipes</a>
                     <a href="noticias">Noticías</a>
-    
+
                     <a class="phone">
                         <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
                         <p>(11)0900-1010</p>
                     </a>
-    
+
                     <a class="mail">
                         <img src="assets/icons/icone_email.svg" alt="email">
                         <p>contato@gamer.com.br</p>
                     </a>
-    
+
                     <div class="midias-sociais">
                         <a href="">
                             <img src="assets/icons/icone_facebook.svg" alt="Facebook logo">
                         </a>
-    
+
                         <a href="">
                             <img src="assets/icons/icone_linkedin.svg" alt="Linkedin logo">
                         </a>
-    
+
                         <a href="">
                             <img src="assets/icons/icone_instagram.svg" alt="Instagram logo">
                         </a>
                     </div>
                 </nav>
-    
+
                 <!-- menu 3 pontinhos -->
                 <img class="menu-pontinhos" onclick="mostrarMenu2()" src="assets/icons/icone_pointer.svg"
                     alt="Ícone 3 pontinhos, abre e fecha o menu de úsuarios">
-    
+
                 <div class="menu-usuarios" id="menu-usuarios">
                     <a href="">
                         <img src="assets/icons/icone_pessoa.svg" alt="Ícone de perfil">
                     </a>
-    
+
                     <a href="">
                         <img src="assets/icons/icone_bag.svg" alt="Ícone de sacola">
                     </a>
-    
+
                     <a href="">
                         <img src="assets/icons/icone_lupa.svg" alt="Ícone de lupa de pesquisa">
                     </a>
-    
+
                 </div>
             </div>
         </div>
@@ -104,18 +106,52 @@
 
     <!-- Main -->
 
-        <main>
-            <section class="login">
-                
-            </section>
-        </main>
+    <main>
+        <section class="login">
+            <h1>Login</h1>
 
-    
+            <section class="mail-login">
+                <div class="email">
+                    <img src="./assets/icons/email-icon.png" alt="">
+
+                    <input type="email" id="email" placeholder="Digite seu e-mail: ">
+                </div>
+
+                <div class="senha">
+                    <img src="./assets/icons/key-icon.png" alt="">
+
+                    <input type="password" id="senha" placeholder="Digite sua senha: ">
+                </div>
+            </section>
+
+                <div class="buttom">
+                    <h2>Logar</h2>
+                </div>
+
+        </section>
+    </main>
+
+
     <!-- Footer -->
 
 
 
     <script>
+
+        let senhaExibida = false;
+
+        function showpassword() {
+            if (senhaExibida == false) {
+                document.getElementById("senha").type = "text";
+                senhaExibida = true;
+            }
+
+            else {
+                document.getElementById("senha").type = "password";
+                senhaExibida = false;
+            }
+        }
+
         function mostrarMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu")
         }
@@ -125,4 +161,5 @@
         }
     </script>
 </body>
+
 </html>

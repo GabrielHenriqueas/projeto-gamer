@@ -263,5 +263,79 @@ main .login {
 
     width: 335px;
     height: 462px;
-    border: 2px solid yellowgreen;
+    border-radius: 8px ;
+    /* background-image: linear-gradient(to right bottom, rgb(26, 19, 37, .6), rgb(60, 3, 65, .38)); */
+    backdrop-filter: blur(10px);
+    /* efeito da borda e do fundo glass */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .login h1 {
+    color: white;
+    font-size: 28px;
+    font-family: TitilliumWeb-Black;
+    text-transform: uppercase;
+    border-top: 3px solid #f9aa01;
+}
+
+main .buttom h2 {
+    width: 273px;
+    height: 40px;
+    background-color: #f9aa01;
+    color: black;
+    border-radius: 8px;
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .email, .senha {
+    width: 273px;
+    height: 40px;
+    background-color: #f9aa01;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .login input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+main .mail-login {
+    width: 273px;
+    height: 111px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
