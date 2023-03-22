@@ -264,16 +264,13 @@ main .login {
     width: 335px;
     height: 462px;
     border-radius: 8px ;
-    /* background-image: linear-gradient(to right bottom, rgb(26, 19, 37, .6), rgb(60, 3, 65, .38)); */
+    background-image: linear-gradient(to right bottom, rgba(26, 19, 37, .6), rgb(60, 3, 65, .38));
+    
+    border-top: 1px solid rgba(239, 239, 239, .7);
+    border-left: 1px solid rgba(239, 239, 239, .7);
+    border-bottom: 1px solid rgba(239, 239, 239, .2);
+    border-right: 1px solid rgba(239, 239, 239, .2);
     backdrop-filter: blur(10px);
-    /* efeito da borda e do fundo glass */
-    border: 2px solid transparent;
-    border-radius: 8px;
-    background:
-        /* fundo */
-        linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
-        /* fundo borda */
-        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
 
     display: flex;
     flex-direction: column;
@@ -286,7 +283,16 @@ main .login h1 {
     font-size: 28px;
     font-family: TitilliumWeb-Black;
     text-transform: uppercase;
-    border-top: 3px solid #f9aa01;
+    /* border-top: 3px solid #f9aa01; */
+}
+
+main .login .titulo-login {
+    width: 77px;
+    height: 43px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .buttom h2 {
@@ -339,3 +345,66 @@ main .mail-login {
     flex-direction: column;
     justify-content: space-around;
 }
+
+main hr {
+    width: 90px;
+    border: 2px solid #f9aa01;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 1531px;
+
+    color: white;
+
+    background-image: url(../assets/images/backgroung_footerr.png);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer h1 {
+    color: white;
+}
+
+footer .links-uteis {
+    width: 327px;
+    height: 155px;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .contatos {
+    width: 290px;
+    height: 257px;
+}
+
+footer p {
+    width: 335px;
+}
+
+footer .redes-sociais {
+    width: 335px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .links-uteis hr {
+    width: 112px;
+    color: #f9aa01;
+}
+
+footer .links-uteis .links hr {
+    width: 15px;
+    color: #f9aa01;
+}
+
