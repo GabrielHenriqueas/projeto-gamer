@@ -256,12 +256,128 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    margin-top: 60px;
+}
+
+
+main .cadastro-equipes {
+    width: 335px;
+    height: 492px;
+    color: white    ;
+
+    border-radius: 8px ;
+    background-image: linear-gradient(to right bottom, rgba(26, 19, 37, .6), rgb(60, 3, 65, .38));
+    
+    border-top: 1px solid rgba(239, 239, 239, .7);
+    border-left: 1px solid rgba(239, 239, 239, .7);
+    border-bottom: 1px solid rgba(239, 239, 239, .2);
+    border-right: 1px solid rgba(239, 239, 239, .2);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .cadastro-equipes h1 {
+    color: white;
+    font-size: 28px;
+    font-family: TitilliumWeb-Black;
+    text-transform: uppercase;
+
+    margin-bottom: -120px;
+}
+
+main .cadastro-equipes hr {
+    width: 250px;
+    height: 0px;
+    border: 2px solid #f9aa01;
+}
+
+main  form .id-equipes, .nome-equipe {
+    width: 273px;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main form #id-equipes, #nome-equipe {
+    width: 200px;
+}
+
+main form input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+main form {
+    width: 273px;
+    height: 104px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+main form .id-nome-equipes .id-equipe, .nome-equipe input::placeholder {
+    color: white;
+}
+
+main .cadastro-equipes .imagem {
+    width: 268px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .cadastro-equipes .imagem p {
+    font-family: TitilliumWeb-Regular;
+    font-size: 10px;
+}
+
+main .cadastro-equipes .imagem button {
+    width: 124px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+    font-family: TitilliumWeb-Bold;
+    font-size: 13px;
+}
+
+main .cadastro-equipes .buttom h2 {
+    width: 273px;
+    height: 40px;
+    background-color: #f9aa01;
+    color: black;
+    border-radius: 8px;
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 /* Footer */
-
 
 footer {
     background-image: url(../assets/images/backgroung_footerr.png);
